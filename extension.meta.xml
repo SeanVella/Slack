@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="slack" status="released" xmlns="http://getsymphony.com/schemas/extension/1.0">
+	<name>Slack</name>
+	<description>Send Slack Messages</description>
+	<repo type="github">https://github.com/mazedigital/author_sort</repo>
+	<types>
+		<type>Workflow</type>
+	</types>
+	<authors>
+		<author>
+			<name github="seanvella">Sean Vella</name>
+		</author>
+		<author>
+			<name github="mazedigital">Maze Digital</name>
+		</author>
+	</authors>
+	<releases>
+		<release version="0.1" date="2017-01-17" min="2.6" max="2.6.x">
+			- Initial Release
+		</release>
+	</releases>
+</extension>
