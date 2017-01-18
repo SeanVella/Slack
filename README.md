@@ -1,1 +1,2 @@
-# slack_manager
+# Slack
+Slack messaging functionality for symphony
