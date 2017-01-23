@@ -88,7 +88,7 @@ Class extension_slack extends  Extension {
                     
         } catch (Exception $e) {
 
-            Symphony::Log()->pushToLog(sprintf('Slack Error: %s', $ex->getMessage()), E_NOTICE, true);
+            Symphony::Log()->pushToLog(sprintf('Slack Error: %s', $e->getMessage()), E_NOTICE, true);
             
         }        
 
