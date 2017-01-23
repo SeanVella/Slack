@@ -53,7 +53,9 @@ Class extension_slack extends  Extension {
 
         $headline = $context['fields']['headline'];
 
-        $link = SYMPHONY_URL . '/publish/articles/edit/'. $entryId . '/';
+        preg_match('/^https?\:\/\/([^\/:?#]+)(?:[\/:?#]|$)/', URL, $matches);
+
+        $link = $matches[0] . 'symphony/publish/articles/edit/'. $entryId . '/';
 
         $client->attach([
             "author_name" => $author,
